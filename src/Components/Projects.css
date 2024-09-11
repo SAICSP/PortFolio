@@ -1,5 +1,6 @@
 .projects {
     background-color: #1a1a2e;
+    padding: 40px;
     margin-bottom: 200px;
 }
 
@@ -74,6 +75,10 @@ h3 {
     .pjbox {
         padding: 10px;
         margin: 1px;
+    }
+
+    .projects{
+        padding: 0;
     }
 
     .pjbox h3 {
