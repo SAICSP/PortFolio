@@ -14,7 +14,7 @@ function Skills() {
 
   return (
     <div className="skills-container">
-      
+      <h1>Technologies</h1>
       <motion.img
         className="skill-icon"
         src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"
