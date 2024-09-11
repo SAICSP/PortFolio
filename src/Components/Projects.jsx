@@ -3,7 +3,7 @@ import './Projects.css';
 function Projects() {
     return ( 
         <div className="container-fluid projects mt-5">
-            <h1 className='text-center'>Featured Projects</h1>
+            <h1 className='text-center mb-5'>Featured Projects</h1>
             <div className="row">
                 <div className="col-6"><div className="pjbox">
                     <img src="/wiki.png" alt="wiki image" style={{height:"200px",width:"50%",borderRadius:"20px"}} />
