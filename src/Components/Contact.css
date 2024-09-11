@@ -1,0 +1,54 @@
+.contact{
+    height: 300px;
+    width: 100%;
+    /* background-color: aqua !important; */
+}
+.f-infosocials {
+    /* padding: 15px; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 40px;
+}
+i{
+    
+    transition: color 0.3s ease;
+    font-size: 2rem;
+}
+i:hover{
+        opacity: 2.5;
+        transform: scale(1.5);
+}
+.facebook  {
+    color: gray;
+}
+.facebook :hover{
+color: #4267B2 !important;
+}
+.instagram:hover{
+    color: #C13584;
+}
+.instagram {
+    color:gray;
+}
+.twitter:hover{
+    color: #1DA1F2;
+}
+.linkedin:hover{
+    color: #0077b5;
+}
+.twitter {
+    color: gray;
+}
+
+.linkedin {
+    color: gray;
+}
+.email{
+    color: gray;
+}
+.email:hover {
+    color: #D14836;;
+}

@@ -1,0 +1,59 @@
+.projects {
+    background-color: #1a1a2e;
+    /* Updated background color */
+    padding: 40px;
+    margin-bottom: 200px;
+}
+
+.projects h1 {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    /* Adjusted text color for better contrast */
+}
+
+.pjbox {
+    background-color: #1a1a2e;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.pjbox h3 {
+    font-family: 'Georgia', serif;
+    color: #1a1a2e;
+    /* Adjusted text color to match the background */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-family: 'Verdana', sans-serif;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.pjbox h6 {
+    font-family: 'Verdana', sans-serif;
+    color: #1a1a2e;
+    /* Adjusted text color to match the background */
+}
+
+.pjbox a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.pjbox a:hover {
+    text-decoration: underline;
+}
+
+h3{
+    color: white;
+}
