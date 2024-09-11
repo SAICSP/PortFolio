@@ -80,9 +80,7 @@ h3 {
     .projects{
         padding: 0;
     }
-        .projects img{
-            width: 100%;
-        }
+        
 
     .pjbox h3 {
         font-size: 1.25rem;
@@ -93,7 +91,7 @@ h3 {
     }
 
     .pjbox img {
-        width: 100%;
+        width: 100% !important;
         height: auto;
     }
 }
