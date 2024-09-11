@@ -2,7 +2,7 @@ import './Projects.css';
 
 function Projects() {
     return ( 
-        <div className="container-fluid projects mt-5">
+        <div className=" projects mt-5">
             <h1 className='text-center mb-5'>Featured Projects</h1>
             <div className="row">
                 <div className="col-6"><div className="pjbox">
