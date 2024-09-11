@@ -80,6 +80,9 @@ h3 {
     .projects{
         padding: 0;
     }
+        .projects img{
+            width: 100%;
+        }
 
     .pjbox h3 {
         font-size: 1.25rem;
