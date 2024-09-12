@@ -28,8 +28,17 @@
     max-width: 800px;
 }
 
-@media (max-width: 480px) {
-    .about-content{
-        width:100%;
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .about-container {
+        height: auto;
+        /* Remove fixed height for mobile */
+        padding: 20px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .about-text {
+        font-size: 1.2rem;
+        /* Reduce font size for better readability on smaller screens */
     }
 }
