@@ -1,10 +1,9 @@
-.contact{
+.contact {
     height: 300px;
     width: 100%;
-    /* background-color: aqua !important; */
 }
+
 .f-infosocials {
-    /* padding: 15px; */
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -12,33 +11,99 @@
     align-items: center;
     height: 40px;
 }
-i{
-    
+
+/* Icon Styles */
+i {
     transition: color 0.3s ease;
     font-size: 2rem;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+    opacity: 1;
+    /* Ensure icons are visible by default */
 }
-i:hover{
-        opacity: 2.5;
-        transform: scale(1.5);
+
+i:hover {
+    opacity: 2.5;
+    transform: scale(1.5);
 }
-.facebook  {
+
+/* Animation Keyframes */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTopRight {
+    0% {
+        transform: translate(100%, -100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+/* Apply animations to specific icons */
+.facebook,
+.instagram,
+.email {
+    animation: slideInFromLeft 1s forwards;
+}
+
+.twitter {
+    animation: slideInFromTopRight 1s forwards;
+}
+
+.linkedin {
+    animation: slideInFromRight 1s forwards;
+}
+
+/* Hover Colors */
+.facebook {
     color: gray;
 }
-.facebook :hover{
-color: #4267B2 !important;
+
+.facebook:hover {
+    color: #4267B2 !important;
 }
-.instagram:hover{
+
+.instagram:hover {
     color: #C13584;
 }
+
 .instagram {
-    color:gray;
+    color: gray;
 }
-.twitter:hover{
+
+.twitter:hover {
     color: #1DA1F2;
 }
-.linkedin:hover{
+
+.linkedin:hover {
     color: #0077b5;
 }
+
 .twitter {
     color: gray;
 }
@@ -46,9 +111,11 @@ color: #4267B2 !important;
 .linkedin {
     color: gray;
 }
-.email{
+
+.email {
     color: gray;
 }
+
 .email:hover {
-    color: #D14836;;
+    color: #D14836;
 }

@@ -1,32 +1,56 @@
+/* Main projects container */
 .projects {
     background-color: #1a1a2e;
     padding: 40px;
     margin-bottom: 200px;
 }
 
+/* Header styling */
 .projects h1 {
     font-family: 'Arial', sans-serif;
     color: #fff;
+    margin-bottom: 20px;
 }
 
+/* Project box styling */
 .pjbox {
     background-color: #1a1a2e;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 5px;
-    margin: 5px auto;
+    padding: 20px;
+    margin: 15px auto;
     max-width: 800px;
     text-align: center;
+    opacity: 0;
+    transform: translateX(0);
+    transition: all 1.2s ease-in-out;
 }
 
+/* Animations for the project components */
+.projects .left {
+    transform: translateX(-100%);
+}
+
+.projects .right {
+    transform: translateX(100%);
+}
+
+.projects .pjbox.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Project title */
 .pjbox h3 {
     font-family: 'Georgia', serif;
-    color: #1a1a2e;
+    color: #fff;
+    /* Changed to white for consistency */
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
+/* Project description */
 .project-description {
     font-family: 'Verdana', sans-serif;
     color: #fff;
@@ -35,11 +59,13 @@
     margin-bottom: 15px;
 }
 
+/* Small heading styling */
 .pjbox h6 {
     font-family: 'Verdana', sans-serif;
-    color: #1a1a2e;
+    color: #fff;
 }
 
+/* Links */
 .pjbox a {
     text-decoration: none;
     color: #007bff;
@@ -50,11 +76,15 @@
     text-decoration: underline;
 }
 
-h3 {
-    color: white;
+/* Image styling */
+.pjbox img {
+    width: 50%;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
-/* Responsive styles */
+/* Responsive styles for tablet devices */
 @media (max-width: 768px) {
     .pjbox {
         padding: 15px;
@@ -71,16 +101,16 @@ h3 {
     }
 }
 
+/* Responsive styles for mobile devices */
 @media (max-width: 480px) {
     .pjbox {
         padding: 10px;
         margin: 1px;
     }
 
-    .projects{
+    .projects {
         padding: 0;
     }
-        
 
     .pjbox h3 {
         font-size: 1.25rem;
@@ -92,12 +122,6 @@ h3 {
 
     .pjbox img {
         width: 100% !important;
-        height: 50%;
+        height: auto;
     }
-}
-
-/* Ensure images are full-width on mobile and tablets */
-.pjbox img {
-    width: 100%;
-    height: auto;
 }
