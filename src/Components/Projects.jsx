@@ -74,11 +74,11 @@ function Projects() {
                         <h6>
                             Link:{' '}
                             <a
-                                href="https://github.com/SAICSP/WeatherApp"
+                                href="https://weatherappbysai.netlify.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                View Code
+                                View Live Demo
                             </a>
                         </h6>
                     </div>
