@@ -12,110 +12,53 @@
     height: 40px;
 }
 
+
+.f-infosocials a {
+    position: relative;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    /* Direct glowing effect */
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
 /* Icon Styles */
 i {
-    transition: color 0.3s ease;
     font-size: 2rem;
-    transform: translateX(0);
-    transition: all 0.6s ease-in-out;
-    opacity: 1;
-    /* Ensure icons are visible by default */
-}
-
-i:hover {
-    opacity: 2.5;
-    transform: scale(1.5);
-}
-
-/* Animation Keyframes */
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInFromTopRight {
-    0% {
-        transform: translate(100%, -100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translate(0, 0);
-        opacity: 1;
-    }
-}
-
-/* Apply animations to specific icons */
-.facebook,
-.instagram,
-.email {
-    animation: slideInFromLeft 1s forwards;
-}
-
-.twitter {
-    animation: slideInFromTopRight 1s forwards;
-}
-
-.linkedin {
-    animation: slideInFromRight 1s forwards;
-}
-
-/* Hover Colors */
-.facebook {
     color: gray;
+    transition: color 0.3s ease-in-out;
+    /* Smooth color transition */
 }
 
-.facebook:hover {
+/* Hover States for Icon Colors */
+.f-infosocials a.facebook:hover i {
     color: #4267B2 !important;
+    /* Facebook blue */
 }
 
-.instagram:hover {
-    color: #C13584;
+.f-infosocials a.instagram:hover i {
+    color: #C13584 !important;
+    /* Instagram pink */
 }
 
-.instagram {
-    color: gray;
+.f-infosocials a.twitter:hover i {
+    color: #1DA1F2 !important;
+    /* Twitter blue */
 }
 
-.twitter:hover {
-    color: #1DA1F2;
+.f-infosocials a.linkedin:hover i {
+    color: #0077b5 !important;
+    /* LinkedIn blue */
 }
 
-.linkedin:hover {
-    color: #0077b5;
-}
-
-.twitter {
-    color: gray;
-}
-
-.linkedin {
-    color: gray;
-}
-
-.email {
-    color: gray;
-}
-
-.email:hover {
-    color: #D14836;
+.f-infosocials a.email:hover i {
+    color: #D14836 !important;
+    /* Email red */
 }

@@ -13,7 +13,7 @@
     margin-bottom: 100px;
     margin-right: 20px;
     border-radius: 20px;
-    transition: transform 1s ease;
+    transition: transform 2s ease;
 }
 
 /* Ensure that only 5 items per row */
