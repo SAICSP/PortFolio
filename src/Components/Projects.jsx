@@ -72,7 +72,7 @@ function Projects() {
                             temperature, humidity, and more...
                         </p>
                         <h6>
-                            Link:{' '}
+                            Demo:{' '}
                             <a
                                 href="https://weatherappbysai.netlify.app/"
                                 target="_blank"
