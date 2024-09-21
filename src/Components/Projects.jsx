@@ -31,7 +31,7 @@ function Projects() {
                         className={`pjbox left ${visible ? 'visible' : ''}`}
                     >
                         <img
-                            src="/wiki.png"
+                            src="/Screenshot (114).png"
                             alt="wiki image"
                             style={{ height: '200px', width: '50%', borderRadius: '20px' }}
                         />
