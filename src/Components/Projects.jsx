@@ -23,7 +23,7 @@ function Projects() {
 
     return (
         <div className="projects mt-5">
-            <h1 className="text-center mb-5">Featured Projects</h1>
+            <h1 className="text-center mb-5"> Projects</h1>
             <div className="row">
                 <div className="col-6">
                     <div
@@ -75,6 +75,37 @@ function Projects() {
                             Demo:{' '}
                             <a
                                 href="https://weatherappbysai.netlify.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View Live Demo
+                            </a>
+                        </h6>
+                    </div>
+                </div>
+                <div className="col-6">
+                    <div
+                        ref={leftRef}
+                        className={`pjbox left ${visible ? 'visible' : ''}`}
+                    >
+                        <img
+                            src="Screenshot (113).png"
+                            alt="shub yatra"
+                            style={{ height: '200px', width: '50%', borderRadius: '20px' }}
+                        />
+                        <h3 style={{ color: '#fff' }} className="mt-3">
+                            Shubh-Yatra
+                        </h3>
+                        <p className="project-description">
+                            Developed an Airbnb-like platform with 
+                            MongoDB,Express,Node.js,Javascript and 
+                            Frontend technologies featuring user authentication
+                            ,property listings and review functionalities
+                        </p>
+                        <h6>
+                            Demo:{' '}
+                            <a
+                                href="https://shubh-yatra-oown.onrender.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
