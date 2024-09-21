@@ -1,7 +1,7 @@
 .hero-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     height: 100vh;
     color: white;
 }
@@ -16,8 +16,8 @@
     height: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: zoomBounce 1.5s ease-in-out;
+    box-shadow: 10px 10px 200px white !important;
+    animation: zoomBounce 3s ease-in-out;
     /* Animation added */
 }
 

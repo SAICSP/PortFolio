@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import './Hero.css';
 
 function Hero() {
@@ -23,12 +24,10 @@ function Hero() {
                 setSpeed(100); 
             }
 
-            
             if (!isDeleting && currentText === currentFullText) {
                 setTimeout(() => setIsDeleting(true), 1000); // Pause before starting to delete
             }
 
-            // If text is fully deleted
             if (isDeleting && currentText === '') {
                 setIsDeleting(false);
                 setTextIndex((prev) => (prev + 1) % texts.length); // Move to the next text
@@ -40,13 +39,35 @@ function Hero() {
         return () => clearTimeout(timer);
     }, [charIndex, isDeleting, speed, currentText, textIndex, texts]);
 
+    // Image animation variants
+    const imageVariants = {
+        hidden: { opacity: 0, scale: 0.8 },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+                duration: 0.8,
+                ease: "easeInOut",
+            },
+        },
+    };
+
     return (
         <div className="hero-container">
             <div className="hero-content">
                 <h1 className="hero-title">{currentText}<span className="cursor">|</span></h1>
-                <a href="https://github.com/SAICSP">
-                    <img src="/sp-Photoroom.png" alt="Sai Prakash" className="hero-image" />
-                </a>
+                <motion.a 
+                    href="https://github.com/SAICSP"
+                    initial="hidden"
+                    animate="visible"
+                    variants={imageVariants}
+                >
+                    <motion.img
+                        src="/sp-Photoroom.png"
+                        alt="Sai Prakash"
+                        className="hero-image"
+                    />
+                </motion.a>
             </div>
         </div>
     );
