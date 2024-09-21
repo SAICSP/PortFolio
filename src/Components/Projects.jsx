@@ -45,7 +45,7 @@ function Projects() {
                         <h6>
                             Demo:{' '}
                             <a
-                                href="https://wikieditedbysai.netlify.app/"
+                                href="https://wikiuibysai.netlify.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
