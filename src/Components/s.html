@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typewriter Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a2e;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .typewriter {
+            font-size: 2em;
+            border-right: 2px solid;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 4.5s steps(30, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+
+            50% {
+                width: 20ch;
+            }
+
+            100% {
+                width: 0;
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="typewriter" id="typewriter"></div>
+
+    <script>
+        const text = "Sai Prakash";
+        let index = 0;
+        const speed = 100; // typing speed in milliseconds
+
+        function typeEffect() {
+            const typewriter = document.getElementById('typewriter');
+            typewriter.textContent = text.substring(0, index);
+
+            if (index < text.length) {
+                index++;
+                setTimeout(typeEffect, speed);
+            } else {
+                setTimeout(() => {
+                    index = 0;
+                    typeEffect();
+                }, 1500); // Pause after full text and before restarting
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", typeEffect);
+    </script>
+</body>
+
+</html>

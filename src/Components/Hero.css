@@ -94,3 +94,15 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 900;
 }
+
+.cursor {
+    display: inline-block;
+    border-left: 2px solid white;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
