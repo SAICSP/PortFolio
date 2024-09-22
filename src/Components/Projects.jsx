@@ -25,7 +25,7 @@ function Projects() {
         <div className="projects mt-5">
             <h1 className="text-center mb-5"> Projects</h1>
             <div className="row">
-                <div className="col-6">
+                <div className="col-6 mb-3">
                     <div
                         ref={leftRef}
                         className={`pjbox left ${visible ? 'visible' : ''}`}
@@ -98,7 +98,7 @@ function Projects() {
                         </h3>
                         <p className="project-description">
                             Developed an Airbnb-like platform with 
-                            MongoDB,Express,Node.js,Javascript and 
+                            MongoDB,Express,<br />Node.js,Javascript and 
                             Frontend technologies featuring user authentication
                             ,property listings and review functionalities
                         </p>
