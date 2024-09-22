@@ -107,6 +107,6 @@ h1 {
     }
 }
 
-button{
+button:hover{
     box-shadow: 5px 5px 50px white !important;
 }
