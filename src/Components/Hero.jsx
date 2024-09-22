@@ -65,9 +65,12 @@ function Hero() {
                     <motion.img
                         src="/sp-Photoroom.png"
                         alt="Sai Prakash"
-                        className="hero-image"
+                        className="hero-image mb-5"
                     />
-                </motion.a>
+                </motion.a> <br />
+                <a href="/cv.pdf" download="CSP.pdf">
+                    <button className='btn btn-info mt-5'>Download CV</button>
+                </a>
             </div>
         </div>
     );
