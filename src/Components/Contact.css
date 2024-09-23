@@ -38,7 +38,7 @@ i {
 }
 
 /* Hover States for Icon Colors */
-.f-infosocials a.facebook:hover i {
+.f-infosocials a.github:hover i {
     color: #4267B2 !important;
     /* Facebook blue */
 }

@@ -46,6 +46,16 @@ function Contact() {
         </motion.a>
 
         <motion.a 
+          href="https://github.com/SAICSP" 
+          className="github" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          variants={item}
+        >
+          <i class="fa-brands fa-github"></i>
+        </motion.a>
+
+        <motion.a 
           href="mailto:chennasaicsp@gmail.com" 
           className="email" 
           variants={item}
@@ -73,15 +83,7 @@ function Contact() {
           <i className="fa-brands fa-instagram"></i>
         </motion.a>
 
-        <motion.a 
-          href="https://www.facebook.com/sai.chenna.1420" 
-          className="facebook" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          variants={item}
-        >
-          <i className="fa-brands fa-square-facebook"></i>
-        </motion.a>
+        
       </motion.div>
     </div>
   );
