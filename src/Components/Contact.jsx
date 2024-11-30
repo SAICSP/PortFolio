@@ -36,7 +36,7 @@ function Contact() {
         animate={isInView ? "show" : "hidden"}
       >
         <motion.a 
-          href="https://www.linkedin.com/in/c%CA%9C%E1%B4%87%C9%B4%C9%B4%E1%B4%80-s%E1%B4%80%C9%AA-p%CA%80%E1%B4%80%E1%B4%8B%E1%B4%80s%CA%9C-b930a0256/" 
+          href="https://www.linkedin.com/in/s%E1%B4%80%C9%AAp%CA%80%E1%B4%80%E1%B4%8B%E1%B4%80s%CA%9C?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
           className="linkedin" 
           target="_blank" 
           rel="noopener noreferrer"
