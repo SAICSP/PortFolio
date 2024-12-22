@@ -68,9 +68,7 @@ function Hero() {
                         className="hero-image mb-5"
                     />
                 </motion.a> <br />
-                <a href="/cv.pdf" download="CSP.pdf">
-                    <button className='btn btn-info mt-5'>Download CV</button>
-                </a>
+                
             </div>
         </div>
     );
